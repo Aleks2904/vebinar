@@ -12,14 +12,131 @@
 
     <link rel="stylesheet" href="img/symbol/sprite.svg">
     
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index/index.css">
+
+    <script src="js/redy/libs.min.js"></script>
+    <script src="js/redy/scripts.min.js"></script>
 
     <title>Music box</title>
 </head>
 <body>
-    <head>
+    <header class="header">
+        <div class="header__container">
+            <img class="header__logo" src="img/Header/logo_header.png" alt="логотип сайта">
 
-    </head>
+            <button class="header__nav-button" id="js-header__nav-button" aria-label="развернуть меню" aria-expanded="false" aria-controls="js-header-nav">
+                <span class="header__nav-button_liner"></span>
+                <span class="header__nav-button_liner"></span>
+                <span class="header__nav-button_liner"></span>
+            </button>
+    
+            <nav class="header-nav" id="js-header-nav">
+                <ul class="header-nav__ul">
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Shows
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Charts
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Team
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Video
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Podcasts
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Event
+                        </a>
+                    </li>
+
+                    <li class="header-nav__item">
+                        <svg class="header-nav__svg" viewbox="0 0 18 21">
+                            <use xlink:href="img/symbol/sprite.svg#activ_button"></use> 
+                        </svg>
+
+                        <a href="#" class="header-nav__link">
+                            Pages
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__basket">
+                <svg class="header__basket-svg" viewbox="0 0 26 23">
+                    <use xlink:href="img/symbol/sprite.svg#basket"></use> 
+                </svg>
+            </button>
+
+            <button class="header__search">
+                <svg class="header__search-svg" viewbox="0 0 24 24">
+                    <use xlink:href="img/symbol/sprite.svg#search"></use> 
+                </svg>
+            </button>
+        </div>
+    </header>
 
     <main></main>
 
@@ -35,6 +152,7 @@
             </lineargradient>
         </defs>
     </svg>
+
 
     <script src="js/redy/libs.min.js"></script>
     <script src="js/redy/scripts.min.js"></script>
