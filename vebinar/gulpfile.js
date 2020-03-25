@@ -33,7 +33,8 @@ gulp.task('borwerSync', function(){
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
         'libs/jquery/dist/jquery.min.js', // Берем jQuery
-        'libs/swiper/package/js/swiper.js'
+        'libs/swiper/package/js/swiper.js',
+        'libs/bootstrap/dist/js/bootstrap.bundle.js'
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
@@ -49,6 +50,7 @@ gulp.task('scripts2', function() {
 
 gulp.task('css-libs', function() {
     return gulp.src([
+        'libs/bootstrap/dist/css/bootstrap.css',
         'libs/swiper/package/css/swiper.css'
         ]) // Выбираем файл для минификации (только для библиотек, ручные стили нет смысла сжимать)
         .pipe(concat('libs.min.css')) // Собираем их в кучу в новом файле libs.min.js

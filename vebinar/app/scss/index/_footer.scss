@@ -1,0 +1,167 @@
+.footer {
+    position: relative;
+    background-color: #13142e;
+
+    &__svg {
+        position: absolute;
+
+        fill: #151839;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 50px;
+    }
+}
+.logo-bar {
+    z-index: 10;
+    margin: 0 auto;
+    width: 300px;
+    
+    &__logo {
+        margin-bottom: 40px;
+    }
+
+    &__language {
+        margin-bottom: 50px;
+    }
+
+    &__title{
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 15px;
+
+        color: #ffffff;
+
+        float: left;
+    }
+.show{
+    background-color: transparent;
+    
+}
+.btn-secondary{
+    background-color: transparent !important;
+    
+}
+
+.dropdown-toggle{
+    background-color: transparent;
+    border: none ;
+
+    padding: 0 5px;
+    margin-top: -2px;
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+
+    &::after{
+        margin-bottom: -2px;
+    }
+}
+
+.dropdown-item{
+    background-color: #151839;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+    &__button {
+        border: 1.0px solid #383f5c;
+        border-radius: 5px;
+
+        font-family: 'Poppins';
+        font-weight: 400;
+        color: #848597;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+
+.button-active{
+    background-color: white;
+}
+
+}
+.service {
+
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.quick-links {
+
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.our-event {
+
+    &__title {
+    }
+
+    &__list {
+    }
+}
+.our-evemt {
+
+    &__item {
+    }
+
+    &__time {
+    }
+
+    &__sity {
+    }
+
+    &__date {
+    }
+}
+.copyright {
+}
+.copyright-info {
+
+    &__copyright {
+    }
+
+    &__subtitle {
+    }
+}
+.social-network {
+
+    &__title {
+    }
+
+    &__list {
+    }
+
+    &__item {
+    }
+
+    &__link {
+    }
+
+    &__svg {
+    }
+}
