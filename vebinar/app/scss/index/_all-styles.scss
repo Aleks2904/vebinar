@@ -1,1 +1,30 @@
 $gradient: linear-gradient(-90.0deg, #ff7d56 0%, #ff498e 100%);
+
+%title-footer{
+    font-family: 'FiraSansCondensed';
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+%subtitle-footer{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+}
+
+%gradient-text{
+    background: $gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
