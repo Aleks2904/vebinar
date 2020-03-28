@@ -8,17 +8,21 @@
         top: 0;
         right: 0;
 
-        width: 30%;
+        width: 20%;
 
         z-index: 15;
 
         fill: #151839;
 
-        &:hover{
-            fill: url(#grad);
+        visibility: hidden;
+
+        @media (min-width: 900px){
+            visibility: visible;
         }
 
-        display: none;
+        @media (min-width: 1750px){
+            width: 12%;
+        }
     }
 
     &__svg_2{
@@ -27,38 +31,63 @@
         bottom: 0;
         left: 0;
 
-        width: 30%;
+        width: 20%;
 
-        z-index: 15;
+        z-index: 5;
 
         fill: #151839;
 
-        &:hover{
-            fill: url(#grad);
+        visibility: hidden;
+
+        @media (min-width: 900px){
+            visibility: visible;
         }
 
-        display: none;
+        @media (min-width: 1750px){
+            width: 12%;
+            bottom: -23%;
+        }
     }
 
     &__container {
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         padding-top: 50px;
+
+        @media (min-width: 900px){
+            padding-bottom: 30px;
+        }
+
+        @media (min-width: 1750px){
+            padding: 80px 220px;
+        }
     }
 }
 .logo-bar {
     z-index: 10;
     margin: 0 auto 40px;
 
+    width: 100%;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (min-width: 1750px){
+        width: 25%;
+        order: 1;
+    }
     
     &__logo {
         margin-bottom: 20px;
         display: block;
+
+        @media (min-width: 1750px){
+            height: 42px;
+            margin-bottom: 10px;
+        }
     }
 
     &__language {
@@ -79,45 +108,6 @@
 
         float: left;
     }
-.dropdown{
-    margin-bottom: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.show{
-    background-color: transparent;
-    
-}
-.btn-secondary{
-    background-color: transparent !important;
-    
-}
-
-.dropdown-toggle{
-    background-color: transparent;
-    border: none ;
-
-    padding: 0 5px;
-    margin-top: -2px;
-
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 15px;
-    
-
-    &::after{
-        margin-bottom: -2px;
-    }
-}
-
-.dropdown-item{
-    background-color: #151839;
-    color: white;
-    font-family: 'Poppins';
-    font-weight: 400;
-}
 
     &__button {
         border: 1.0px solid #383f5c;
@@ -141,25 +131,77 @@
         }
 
         &:hover{
-            border: 1.5px solid palevioletred;
-            border-radius: 5px;
+            background-color: white;
             outline: none;
         }
     }
-
-.button-active{
-    background-color: white;
 }
+.dropdown{
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
+    @media (min-width: 1750px){
+        height: 25px;
+    }
+}
+.show{
+    background-color: transparent;
+    
+}
+.btn-secondary{
+    background-color: transparent !important;
+    
+}
+.dropdown-toggle{
+    background-color: transparent;
+    border: none ;
+
+    padding: 0 5px;
+    margin-top: -2px;
+
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 15px;
+    
+
+    &::after{
+        margin-bottom: -2px;
+    }
+}
+.dropdown-item{
+    background-color: #151839;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
 }
 .service {
     margin: 0 auto 40px;
-    z-index: 10;
+    z-index: 15;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    @media (min-width:900px){
+        width: 25%;
+        order: 1;
+    }
+
+    @media (min-width: 1750px){
+        width: 25%;
+
+        order: 2;
+    }
 
     &__title {
         @extend %title-footer;
 
         margin-bottom: 15px;
+
+        text-align: center;
     }
 
     &__list {
@@ -184,6 +226,13 @@
             transform: scale(1.2);
             transition: transform 0.2s;
 
+            .footer__svg_1{
+                fill: url(#grad);
+            }
+            .footer__svg_2{
+                fill: url(#grad);
+            }
+
             .service__link{
                 @extend %gradient-text;
 
@@ -199,12 +248,29 @@
 .quick-links {
     margin: 0 auto;
     margin-bottom: 40px;
-    z-index: 10;
+    z-index: 15;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    @media (min-width:900px){
+        width: 25%;
+
+        order: 3;
+    }
+
+    @media (min-width:1750px){
+        width: 25%;
+    }
 
     &__title {
         @extend %title-footer;
 
         margin-bottom: 15px;
+
+        text-align: center;
     }
 
     &__list {
@@ -230,6 +296,13 @@
 
                 transition: background 0.2s;
             }
+
+            .footer__svg_1{
+                fill: url(#grad);
+            }
+            .footer__svg_2{
+                fill: url(#grad);
+            }
         }
     }
 
@@ -241,24 +314,55 @@
     margin: 0 auto 50px;
     z-index: 10;
 
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    @media (min-width:900px){
+        width: 30%;
+
+        margin-top: 20px;
+
+        order: 2;
+    }
+
+    @media (min-width: 1750px){
+        width: 25%;
+        order: 4;
+
+        margin-top: 0;
+    }
+
     &__title {
         @extend %title-footer;
 
         text-align: center;
 
         margin-bottom: 15px;
+
+        @media (min-width: 1750px){
+           margin-bottom: 30px;
+        }
     }
 
     &__list {
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
-
     }
     
     &__item {
         list-style: none;
         margin-bottom: 20px;
         padding: 10px;
+
+        margin: 0 auto;
+
+        margin-bottom: 20px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
 
         width: 270px;
         height: 60px;
@@ -306,15 +410,35 @@
     border-top: 1px solid #848597;
     padding: 20px 0 30px;
     z-index: 10;
+
+    @media (min-width: 900px){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 1750px) {
+        width: 1170px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 }
 .copyright-info {
     margin-bottom: 20px;
+
+    @media (min-width: 900px){
+        margin-bottom: 0;
+        margin-left: 20px;
+    }
 
     &__copyright {
         @extend %subtitle-footer;
         font-size: 15px;
         margin-bottom: 10px;
         text-align: center;
+
+        @media (min-width: 900px){
+            
+        }
     }
 
     &__subtitle {
@@ -322,6 +446,10 @@
         font-size: 13px;
         color: #848597;
         text-align: center;
+
+        @media (min-width: 900px){
+            text-align: left;
+        }
     }
 }
 .social-network {
