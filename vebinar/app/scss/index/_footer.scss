@@ -2,17 +2,18 @@
     position: relative;
     background-color: #13142e;
 
-    &__svg_1 {
+    &__svg-1 {
         position: absolute;
-
         top: 0;
         right: 0;
 
         width: 20%;
 
-        z-index: 15;
+        z-index: 5;
 
         fill: #151839;
+
+        transition: all 1s;
 
         visibility: hidden;
 
@@ -25,9 +26,8 @@
         }
     }
 
-    &__svg_2{
+    &__svg-2{
         position: absolute;
-
         bottom: 0;
         left: 0;
 
@@ -36,6 +36,8 @@
         z-index: 5;
 
         fill: #151839;
+
+        transition: all 1s;
 
         visibility: hidden;
 
@@ -48,6 +50,21 @@
             bottom: -23%;
         }
     }
+
+    &__svg-op{
+        opacity: 0;
+        transition: all 1s;
+    }
+
+.svg-active{
+    fill: url(#grad);
+    opacity: 1;
+    transition: all 1s;
+}
+.svg-no-active{
+    opacity: 0;
+    transition: all 1s;
+}
 
     &__container {
         position: relative;
@@ -207,10 +224,14 @@
     &__list {
         margin: 0 auto;
         padding: 0;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__item {
-        text-align: center;
+        display: inline-block;
         list-style: none;
         margin-bottom: 10px;
 
@@ -225,13 +246,6 @@
         &:hover{
             transform: scale(1.2);
             transition: transform 0.2s;
-
-            .footer__svg_1{
-                fill: url(#grad);
-            }
-            .footer__svg_2{
-                fill: url(#grad);
-            }
 
             .service__link{
                 @extend %gradient-text;
@@ -276,12 +290,17 @@
     &__list {
         margin: 0;
         padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__item {
         text-align: center;
         list-style: none;
         margin-bottom: 10px;
+
+        display: inline-block;
 
         transition: transform 0.2s;
 
