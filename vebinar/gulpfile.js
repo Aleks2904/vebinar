@@ -42,7 +42,7 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('scripts2', function() {
-    return gulp.src('app/js/*.js')
+    return gulp.src(['app/js/*.js', '!app/js/search.js'])
         .pipe(concat('scripts.min.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('app/js/redy')); // Выгружаем в папку app/js

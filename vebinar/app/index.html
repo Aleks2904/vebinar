@@ -8,11 +8,12 @@
 
     <link rel="stylesheet" href="css/libs/normalize.css">
     <link rel="stylesheet" href="css/libs/libs.min.css">
+    <link rel="stylesheet" href="css/libs/search.css">
     <link rel="stylesheet" href="css/fonts.css">
 
     <link rel="stylesheet" href="img/symbol/sprite.svg">
     
-    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/header-footer/index.css">
 
     <title>Music box</title>
 </head>
@@ -127,11 +128,15 @@
                 </svg>
             </button>
 
-            <button class="header__search">
+           <!--<button class="header__search">
                 <svg class="header__search-svg" viewbox="0 0 24 24">
                     <use xlink:href="img/symbol/sprite.svg#search"></use> 
                 </svg>
-            </button>
+            </button>--> 
+            <div class="search-box">
+                <input type="text" id="search" placeholder=" "/>
+                <span class="search-box-span" id="js-search-box-span"></span>
+            </div>
         </div>
     </header>
 
@@ -362,6 +367,7 @@
 
     <script src="js/redy/libs.min.js"></script>
     <script src="js/redy/scripts.min.js"></script>
+    <script src="js/search.js"></script>
 
 </body>
 </html>

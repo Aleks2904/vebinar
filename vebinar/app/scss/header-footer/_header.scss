@@ -39,6 +39,11 @@
             }
         }
 
+        @media (min-width: 1400px){
+            visibility: hidden;
+            position: absolute;
+        }
+
         &_liner {
             margin-bottom: 8px;
             width: 30px;
@@ -60,6 +65,13 @@
 
         display: none;
 
+        @media (min-width:1400px){
+            display:block;
+            position: relative;
+            margin-top:0;
+            width:820px;
+        }
+
 		&__ul {
             background: #2c3552;
 
@@ -78,14 +90,22 @@
             flex-direction: column;
 
             z-index: 20;
+
+            @media (min-width:1400px){
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                background: transparent;
+                padding:0;
             }
+        }
 
 		&__item {
             list-style: none;
 
             position: relative;
     
-            margin-right: 50px;
+           // margin-right: 50px;
             margin-bottom: 20px;
     
             transition: transform 0.2s;
@@ -115,6 +135,15 @@
                     font-weight: 500;
                 }
             }
+
+            @media (min-width:1400px){
+                margin-bottom: 0;
+                margin-right:30px;
+
+                &:last-child{
+                    margin-right:0;
+                }
+            }
 		}
 
 		&__svg {
@@ -123,6 +152,12 @@
             position: absolute;
             margin-left: -30px;
             top: 8px;
+
+            @media (min-width:1400px){
+                width: 20px;
+                margin-left:16px;
+                top:-23px;
+            }
 		}
 
 		&__link {
@@ -131,6 +166,12 @@
             font-family: 'Poppins';
             font-size: 25px;
             color: white;
+
+             @media (min-width:1400px){
+
+                font-size: 16px;
+                font-weight: 500;
+            }
 		}
 }
 
@@ -138,6 +179,8 @@
         background: transparent;
         outline:none !important;
         border: none;
+
+        margin-right:60px;
 
         padding-top: 5px;
 
@@ -149,32 +192,14 @@
                 fill: url('#grad');
             }
         }
-    }
 
-    &__basket-svg {
-        height: 20px;
-
-        fill: white;
-    }
-
-    &__search {
-        background: transparent;
-        border: none;
-        outline: none !important;
-
-        padding-top: 5px;
-
-        cursor: pointer;
-
-        &:hover{
-            .header__search-svg{
-                fill: url('#grad');
-            }
+        @media (min-width:1400px){
+            margin-right:100px;
         }
     }
 
-    &__search-svg {
-        height: 20px;
+    &__basket-svg {
+        height: 28px;
 
         fill: white;
     }

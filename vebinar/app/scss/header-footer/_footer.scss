@@ -58,8 +58,12 @@
 
 .svg-active{
     fill: url(#grad);
-    opacity: 1;
+    opacity: 0.4;
     transition: all 1s;
+
+    @media(min-width:1750px){
+        opacity: 1;
+    }
 }
 .svg-no-active{
     opacity: 0;
@@ -164,12 +168,10 @@
     }
 }
 .show{
-    background-color: transparent;
-    
+    background-color: transparent;  
 }
 .btn-secondary{
     background-color: transparent !important;
-    
 }
 .dropdown-toggle{
     background-color: transparent;
@@ -187,11 +189,17 @@
         margin-bottom: -2px;
     }
 }
+.dropdown-menu{
+    background-color: #151839;
+}
 .dropdown-item{
     background-color: #151839;
     color: white;
     font-family: 'Poppins';
     font-weight: 400;
+}
+.dropdown-item:hover{
+    color: red;
 }
 .service {
     margin: 0 auto 40px;
@@ -205,10 +213,12 @@
     @media (min-width:900px){
         width: 25%;
         order: 1;
+        margin-top: -70px;
     }
 
     @media (min-width: 1750px){
         width: 25%;
+        margin-top: 0px;
 
         order: 2;
     }
@@ -271,12 +281,13 @@
 
     @media (min-width:900px){
         width: 25%;
-
+        margin-top: -70px;
         order: 3;
     }
 
     @media (min-width:1750px){
         width: 25%;
+        margin-top: 0px;
     }
 
     &__title {
