@@ -91,9 +91,9 @@ a {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px; }
+          align-items: center; }
   .header__container {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -105,7 +105,9 @@ a {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%; }
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto; }
   .header__logo {
     display: block; }
   .header__nav-button {
@@ -144,7 +146,8 @@ a {
         display: block;
         position: relative;
         margin-top: 0;
-        width: 820px; } }
+        width: 820px;
+        margin-left: -100px; } }
     .header .header-nav__ul {
       background: #2c3552;
       height: 100%;
@@ -233,7 +236,8 @@ a {
       margin-left: 15px;
       font-family: 'Poppins';
       font-size: 25px;
-      color: white; }
+      color: white;
+      pointer-events: auto; }
       @media (min-width: 1400px) {
         .header .header-nav__link {
           font-size: 16px;
@@ -253,6 +257,9 @@ a {
   .header__basket-svg {
     height: 28px;
     fill: white; }
+
+.hide-header {
+  opacity: 0; }
 
 .footer {
   position: relative;
@@ -324,7 +331,9 @@ a {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 50px; }
+    padding-top: 50px;
+    max-width: 1920px;
+    margin: 0 auto; }
     @media (min-width: 900px) {
       .footer__container {
         padding-bottom: 30px; } }

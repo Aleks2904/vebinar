@@ -1,0 +1,136 @@
+.section-2 {
+background-color: #1b2136;
+
+    &__container {
+        max-width: 1170px;
+        margin: 0 auto;
+
+        padding-top: 50px;
+    }
+
+    &__title{
+        @extend %title-index;
+
+        margin: 0;
+        margin-bottom: 50px;
+
+        text-align: center;
+    }
+
+    &__svg-title {
+        width: 19px;
+        height: 45px;
+
+        fill: url(#grad);
+    }
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+    overflow: hidden;
+    width: 222px;
+
+    &:hover{
+        .swiper-slide__opacity{
+            visibility: visible;
+            transition: opacity 0.4s;
+        }
+
+        .swiper-slide__song-title{
+            @extend %gradient-text;
+        }
+
+        .swiper-slide__arrow-right{
+            transform: translateX(83px) scale(1.4);
+            transition: transform  0.4s;
+        }
+
+        .swiper-slide__song-time{
+            transform: translateX(100px);
+            opacity: 0;
+            transition: transform  0.4s, opacity 0.4s;
+        }
+
+        &::after{
+            content: url('../../img/icon/play_button_b2.png');
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            z-index: 5;
+            opacity: 1;
+        }
+    }
+
+    &__background {
+        position: relative;
+
+        margin-bottom: 20px;
+    }
+
+    &__img{
+        background-size: cover;
+    }
+
+    &__opacity{
+        position: absolute;
+
+        background-color: black;
+        opacity: 0.6;
+
+        z-index: 5;
+
+        top: 0;
+        left: 0;
+
+        width: 221px;
+        height: 250px;
+
+        visibility: hidden;
+    }
+
+    &__song-info {
+    }
+
+    &__song-title {
+        font-family: 'FiraSansCondensed';
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.015em;
+        color: #ffffff;
+
+        margin-bottom: 10px;
+
+        display: block;
+    }
+
+    &__arrow-right {
+        position: absolute;
+        width: 60px;
+        fill: url(#grad);
+
+        margin-right: 20px;
+        margin-left: -83px;
+    }
+
+    &__song-time {
+        font-family: 'Poppins';
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 0.015em;
+        color: #f2f2f2;
+
+        display: block;
+    }
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+    display: none;
+}
+.swiper-button-next {
+    display: none;
+}
+.swiper-scrollbar {
+}

@@ -1,0 +1,106 @@
+.section-1 {
+    background-color: #13142e;
+
+    &__container-1 {
+        position: relative;
+
+        background: url('../../img/Home/bacground_b1.png');
+        height: 700px;
+        max-width: 1920px;
+
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 150px;
+    }
+
+    &__opacity-block {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+
+        background-color: black;
+        opacity: 0.6;
+        height: 700px;
+        width: 100%;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        opacity: 1;
+
+        font-family: 'FiraSansCondensed';
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        text-align: center;
+
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        opacity: 1;
+
+        font-family: 'Poppins';
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #e8e8e8;
+
+        text-align: center;
+
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    &__button {
+        position: relative;
+        z-index: 2;
+        opacity: 1;
+
+        width: 110px;
+        height: 55px;
+
+        border: none;
+        outline: none;
+
+        background:$gradient;
+
+        &:hover{
+            .section-1__button-svg-right{
+                transform: translateX(40%) scale(1.2);
+                fill: gray;
+
+                transition: transform 0.5s;
+            }
+        }
+    }
+
+    &__button-svg-right{
+        position: absolute;
+        z-index: 2;
+        opacity: 1;
+
+        width: 85px;
+
+        top: 28%;
+        left: -35%;
+
+        outline: none;
+
+        fill: white;
+
+        transition: transform 0.5s;
+    }
+}
