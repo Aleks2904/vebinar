@@ -33,18 +33,18 @@ $(document).ready(function(){
     $('#search').focus(function() {
         const width = $(window).width();
 
-        if (width < '500'){
+        if (width < '499'){
             $('.header__logo').addClass('hide-header');
             $('.header__basket').addClass('hide-header');
             $('#js-header__nav-button').addClass('hide-header');
         }
 
-        if (width < '800'){
+        if (width < '799'){
             $('.header__basket').addClass('hide-header');
             $('#js-header__nav-button').addClass('hide-header');
         }
 
-        if (width < '1400'){
+        if (width < '1399'){
             $('.header__basket').addClass('hide-header');
         }
 
