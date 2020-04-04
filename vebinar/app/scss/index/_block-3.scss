@@ -1,0 +1,156 @@
+.section-3 {
+
+    padding: 60px 0 60px;
+
+    &__title {
+        @extend %title-index;
+
+        margin: 0;
+        margin-bottom: 50px;
+
+        text-align: center;
+
+        @media (min-width: 1500px) {
+            text-align: left;
+        }
+    }
+
+    &__svg-title {
+        width: 19px;
+        height: 45px;
+
+        fill: url(#grad);
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        width: 300px;
+        
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .swiper-slide {
+        width: 25%;
+
+        width: 222px;
+        height: 280px;
+
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        padding: 42px 0 0 26px;
+
+        position: relative;
+
+        background-color: #252c47;
+        border-radius: 5.0px;
+
+        list-style: none;
+
+        &:hover{
+            .section-3__opacity{
+                visibility: visible;
+            }
+
+            .section-3__title-musician{
+                @extend %gradient-text;
+
+                transform: scale(1.1);
+                transition: transform 0.3s;
+            }
+
+            .section-3__button-play{
+                transform: scale(1.2);
+
+                transition: transform 0.3s;
+            }
+        }
+    }
+
+    &__background{
+        position: absolute;
+
+        padding-top: 50px;
+
+        width: 222px;
+        height: 280px;
+        
+        top: 0;
+        right: 0;
+    }
+
+    &__img {
+        position: absolute;
+        
+        right: 0;
+        bottom: 0;
+    }
+
+    &__opacity{
+        position: absolute;
+
+        background-color: black;
+        opacity: 0.6;
+
+        z-index: 5;
+
+        top: 0;
+        left: 0;
+
+        width: 222px;
+        height: 280px;
+
+        visibility: hidden;
+    }
+
+    &__title-musician {
+        position: relative;
+        z-index: 10;
+
+        font-family: 'FiraSansCondensed';
+        font-size: 19px;
+        font-weight: 400;
+        letter-spacing: 0.015em;
+        color: #fefefe;
+
+        margin: 0;
+        margin-bottom: 15px;
+        padding: 0;
+
+        transition: transform 0.3s;
+    }
+
+    &__subtitle-musician {
+        position: relative;
+        z-index: 10;
+
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+        color: #f2f2f2;
+    }
+
+    &__button-play{
+        position: absolute;
+        z-index: 10;
+        display: block;
+
+        left: 30px;
+        bottom: 35px;
+
+        background: url('../../img/icon/play_button_b3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        width: 17px;
+        height: 18px;
+
+        border: none;
+        outline: none !important;
+
+        transition: transform 0.3s;
+    }
+}

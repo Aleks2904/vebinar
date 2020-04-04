@@ -48,7 +48,7 @@ background-color: #1b2136;
     }
 
     @media (min-width: 1500px) {
-        width: 1400px;
+        width: 1210px;
     }
 }
 .swiper-wrapper {
@@ -187,7 +187,7 @@ background-color: #1b2136;
 
         position: absolute;
         top: 300px;
-        left: -140px;
+        left: 1%;
 
         width: 60px;
         height: 45px;
@@ -197,6 +197,18 @@ background-color: #1b2136;
         &::after{
             content: none;
         }
+    }
+
+    @media (min-width: 1150px) {
+        left: 9%;
+    }
+
+    @media (min-width: 1400px) {
+        left: 15%;
+    }
+
+    @media (min-width: 1500px) {
+        left: 0%;
     }
 }
 
@@ -230,7 +242,7 @@ background-color: #1b2136;
 
         position: absolute;
         top: 300px;
-        right: -140px;
+        right: 1%;
 
         width: 60px;
         height: 45px;
@@ -240,6 +252,18 @@ background-color: #1b2136;
         &::after{
             content: none;
         }
+    }
+
+    @media (min-width: 1150px) {
+        right: 9%;
+    }
+
+    @media (min-width: 1400px) {
+        right: 15%;
+    }
+
+    @media (min-width: 1500px) {
+        right: 0%;
     }
 }
 
