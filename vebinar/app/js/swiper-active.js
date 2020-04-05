@@ -14,6 +14,17 @@ $(document).ready(function () {
         prevEl: '.b2-swiper-button-prev',
       },
 
+      effect: 'coverflow',
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 20,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+
       updateOnWindowResize: true,
 
       spaceBetween: 30,
@@ -83,7 +94,7 @@ $(document).ready(function () {
         1500:{
           slidesPerView: 4,
           slidesPerColumn: 2,
-          spaceBetween: 20
+          spaceBetween: 30
         }
       }
 
