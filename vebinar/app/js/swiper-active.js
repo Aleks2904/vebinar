@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var mySwiper = new Swiper ('.swiper-container', {
+    var mySwiper = new Swiper ('.b2-swiper-container', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
@@ -10,8 +10,8 @@ $(document).ready(function () {
       },
 
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.b2-swiper-button-next',
+        prevEl: '.b2-swiper-button-prev',
       },
 
       updateOnWindowResize: true,
@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     })
 
-    var mySwiper = new Swiper ('.swiper-container-b3', {
+    var mySwiper = new Swiper ('.b3-swiper-container', {
       // Optional parameters
       direction: 'horizontal',
       loop: true,
@@ -54,8 +54,8 @@ $(document).ready(function () {
       },
 
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.b3-swiper-button-next',
+        prevEl: '.b3-swiper-button-prev',
       },
 
       updateOnWindowResize: true,
@@ -76,11 +76,13 @@ $(document).ready(function () {
 
         950:{
           slidesPerView: 3,
+          slidesPerColumn: 2,
           spaceBetween: 60
         },
 
         1500:{
-          slidesPerView: 5,
+          slidesPerView: 4,
+          slidesPerColumn: 2,
           spaceBetween: 20
         }
       }

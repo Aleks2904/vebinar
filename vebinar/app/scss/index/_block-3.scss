@@ -1,6 +1,17 @@
 .section-3 {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #13142e;
 
-    padding: 60px 0 60px;
+    &__container {
+        max-width: 1400px;
+        position: relative;
+
+        padding: 0;
+        margin: 0 auto;
+
+        padding: 60px 0 60px;
+    }
 
     &__title {
         @extend %title-index;
@@ -21,61 +32,67 @@
 
         fill: url(#grad);
     }
+}
+.b3-swiper-container {
+    width: 222px;
+    height: 100%;
 
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
+    padding: 0 0 80px;
 
-        width: 300px;
-        
-        margin: 0 auto;
-        padding: 0;
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    @media (min-width: 600px) {
+        width: 500px;
     }
 
-    .swiper-slide {
-        width: 25%;
+    @media (min-width: 950px) {
+        width: 750px;
+    }
 
-        width: 222px;
-        height: 280px;
+    @media (min-width: 1500px) {
+        width: 1210px;
+    }
+}
 
-        margin-right: 30px;
-        margin-bottom: 30px;
-
-        padding: 42px 0 0 26px;
+.b3-list {
+    &__item {
+        overflow: hidden;
 
         position: relative;
+
+        height: 280px;
 
         background-color: #252c47;
         border-radius: 5.0px;
 
-        list-style: none;
-
         &:hover{
-            .section-3__opacity{
+            .b3-list__opacity{
                 visibility: visible;
             }
 
-            .section-3__title-musician{
+            .b3-list__title-musician{
                 @extend %gradient-text;
 
                 transform: scale(1.1);
                 transition: transform 0.3s;
             }
 
-            .section-3__button-play{
+            .b3-list__button-play{
                 transform: scale(1.2);
 
                 transition: transform 0.3s;
             }
         }
+
+      
     }
 
-    &__background{
+    &__background {
         position: absolute;
 
-        padding-top: 50px;
-
-        width: 222px;
+        width: 100%;
         height: 280px;
         
         top: 0;
@@ -89,7 +106,7 @@
         bottom: 0;
     }
 
-    &__opacity{
+    &__opacity {
         position: absolute;
 
         background-color: black;
@@ -116,8 +133,7 @@
         letter-spacing: 0.015em;
         color: #fefefe;
 
-        margin: 0;
-        margin-bottom: 15px;
+        margin: 30px 0 15px 30px;
         padding: 0;
 
         transition: transform 0.3s;
@@ -131,9 +147,12 @@
         font-size: 14px;
         font-weight: 400;
         color: #f2f2f2;
+
+        margin: 0;
+        margin-left: 30px;
     }
 
-    &__button-play{
+    &__button-play {
         position: absolute;
         z-index: 10;
         display: block;
@@ -152,5 +171,96 @@
         outline: none !important;
 
         transition: transform 0.3s;
+    }
+}
+.b3-pagination {
+    @media (min-width: 950px) {
+        display: none;
+    }
+}
+.b3-swiper-button-prev {
+    display: none;
+
+    &:hover{
+        .swiper-button-prev-svg{
+            transform: translateX(-30%) scale(1.2);
+            fill: url(#grad);
+            transition: transform 0.3s;
+        } 
+    }
+
+    @media (min-width: 950px) {
+        display: block;
+        z-index: 10;
+
+        outline: none;
+
+        position: absolute;
+        top: 300px;
+        left: 1%;
+
+        width: 60px;
+        height: 45px;
+        background-color: #2c3552;
+        border-radius: 2.0px;
+
+        &::after{
+            content: none;
+        }
+    }
+
+    @media (min-width: 1150px) {
+        left: 9%;
+    }
+
+    @media (min-width: 1400px) {
+        left: 15%;
+    }
+
+    @media (min-width: 1500px) {
+        left: 0%;
+    }
+}
+.b3-swiper-button-next {
+    display: none;
+
+    &:hover{
+        .swiper-button-next-svg{
+            transform: translateX(30%) scale(1.2);
+            fill: url(#grad);
+            transition: transform 0.3s;
+        } 
+    }
+
+    @media (min-width: 950px) {
+        display: block;
+        z-index: 10;
+
+        outline: none;
+
+        position: absolute;
+        top: 300px;
+        right: 1%;
+
+        width: 60px;
+        height: 45px;
+        background-color: #2c3552;
+        border-radius: 2.0px;
+
+        &::after{
+            content: none;
+        }
+    }
+
+    @media (min-width: 1150px) {
+        right: 9%;
+    }
+
+    @media (min-width: 1400px) {
+        right: 15%;
+    }
+
+    @media (min-width: 1500px) {
+        right: 0%;
     }
 }
