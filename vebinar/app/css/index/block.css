@@ -445,7 +445,6 @@
 
 .b3-swiper-container {
   width: 222px;
-  height: 100%;
   padding: 0 0 80px;
   margin: 0 auto;
   overflow: hidden; }
@@ -454,7 +453,8 @@
       width: 500px; } }
   @media (min-width: 950px) {
     .b3-swiper-container {
-      width: 750px; } }
+      width: 750px;
+      height: 700px; } }
   @media (min-width: 1500px) {
     .b3-swiper-container {
       width: 1210px; } }
@@ -576,7 +576,7 @@
       z-index: 10;
       outline: none;
       position: absolute;
-      top: 300px;
+      top: 470px;
       left: 1%;
       width: 60px;
       height: 45px;
@@ -592,6 +592,7 @@
       left: 15%; } }
   @media (min-width: 1500px) {
     .b3-swiper-button-prev {
+      top: 450px;
       left: 0%; } }
 
 .b3-swiper-button-next {
@@ -612,7 +613,7 @@
       z-index: 10;
       outline: none;
       position: absolute;
-      top: 300px;
+      top: 470px;
       right: 1%;
       width: 60px;
       height: 45px;
@@ -628,4 +629,5 @@
       right: 15%; } }
   @media (min-width: 1500px) {
     .b3-swiper-button-next {
+      top: 450px;
       right: 0%; } }
